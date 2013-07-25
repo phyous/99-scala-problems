@@ -1,3 +1,5 @@
+import scala.annotation.tailrec
+
 /**
 P04 (*) Find the number of elements of a list.
 Example:
@@ -16,6 +18,7 @@ def length1[A](input: List[A]): Int = {
 
 // Let's try with tail recursion
 def length2[A](input: List[A]): Int = {
+  @tailrec
   def recurse[A](sum: Int, l: List[A]): Int = {
     l match {
       case _ :: tail => recurse(sum + 1, tail)
