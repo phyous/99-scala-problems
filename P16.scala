@@ -41,7 +41,7 @@ solutions.foreach {
     assert(f(2, List(1, 1, 1)) == List(1, 1), "list with duplicates")
     assert(f(5, List(1, 2, 3)) == List(1, 2, 3), "n > list size")
     assert(f(2, List()) == List(), "Empty input list")
-    assert(f(-1, List(1)) == List(), "N < 0, empty list")
-    assert(f(-1, List()) == List(), "N < 0, non-empty list")
+    assert(f(-1, List(1)) == List(), "N < 0, non-empty list")
+    assert(f(-1, List()) == List(), "N < 0, empty list")
 }
 println("All tests passed!")
