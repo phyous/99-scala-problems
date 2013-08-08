@@ -43,8 +43,6 @@ def splitRecursive[A](n: Int, ls: List[A]): (List[A], List[A]) = (n, ls) match {
 // 3- Tests
 def solutions: List[((Int, List[Any]) => (List[Any],List[Any]))] = List(split, split2, splitRecursive)
 
-println(split2(100, List(1, 2, 3)))
-
 println("Starting tests...")
 solutions.foreach {
   f: ((Int, List[Any]) => (List[Any],List[Any])) =>
